@@ -1,4 +1,4 @@
-﻿namespace HangMan
+﻿namespace GuessTheNumber
 {
     internal class Program
     {
@@ -7,4 +7,5 @@
             Console.WriteLine("Hello, World!");
         }
     }
+
 }
