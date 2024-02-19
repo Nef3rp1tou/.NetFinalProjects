@@ -5,7 +5,11 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Calculator.csproj", "{60D855D0-14DD-4780-B930-B5CE2EF70C1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessTheNumber", "GuessTheNumber\GuessTheNumber.csproj", "{59CBAB51-86DD-41E8-8FDB-AA610C3E3BAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuessTheNumber", "GuessTheNumber\GuessTheNumber.csproj", "{59CBAB51-86DD-41E8-8FDB-AA610C3E3BAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Translate", "Translate\Translate.csproj", "{1A449552-F5F9-4B8D-8890-AEE25ACEB8BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HangMan", "HangMan\HangMan.csproj", "{1B7C4BF8-A863-4EBB-9AA4-8534B69980D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{59CBAB51-86DD-41E8-8FDB-AA610C3E3BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59CBAB51-86DD-41E8-8FDB-AA610C3E3BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59CBAB51-86DD-41E8-8FDB-AA610C3E3BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A449552-F5F9-4B8D-8890-AEE25ACEB8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A449552-F5F9-4B8D-8890-AEE25ACEB8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A449552-F5F9-4B8D-8890-AEE25ACEB8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A449552-F5F9-4B8D-8890-AEE25ACEB8BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B7C4BF8-A863-4EBB-9AA4-8534B69980D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7C4BF8-A863-4EBB-9AA4-8534B69980D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7C4BF8-A863-4EBB-9AA4-8534B69980D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7C4BF8-A863-4EBB-9AA4-8534B69980D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

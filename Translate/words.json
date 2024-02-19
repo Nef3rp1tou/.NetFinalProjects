@@ -1,0 +1,19 @@
+﻿{
+    "translations": [
+        {
+            "georgian": "გამარჯობა",
+            "english": "Hello",
+            "russian": "Привет"
+        },
+        {
+            "georgian": "ნახვამდის",
+            "english": "Goodbye",
+            "russian": "До свидания"
+        },
+        {
+            "georgian": "კარგად",
+            "english": "Well",
+            "russian": "Хорошо"
+        }
+    ]
+}
