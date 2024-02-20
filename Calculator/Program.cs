@@ -50,7 +50,7 @@ namespace Calculator
                     double result = Calculate(num1, num2, operation);
                     showMessage($"Result: {result}");
 
-                    showMessage("Do you want to perform another calculation? (yes-(or write new number)/no/yc - for continue calculation from old result!):");
+                    showMessage("Do you want to perform another calculation? (yes (write new number)/no/yc  (for continue calculation from old result!):");
                     string answer = Console.ReadLine();
                     if (answer.ToLower() == "no")
                         break;
