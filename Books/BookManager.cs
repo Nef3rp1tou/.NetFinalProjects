@@ -6,12 +6,11 @@ using Newtonsoft.Json;
 
 namespace Books
 {
-
     internal class BookManager
     {
-        public List<Book> Books {  get; set; }
+        public List<Book> Books { get; set; }
 
-        public BookManager() 
+        public BookManager()
         {
             Books = new List<Book>();
             LoadBooks();
@@ -29,15 +28,23 @@ namespace Books
                 return;
             }
 
-            Book book = new Book(title, author, year);
+            bool exists = false;
 
-            if(!Books.Contains(book))
+            for (int i = 0; i < Books.Count; i++)
             {
-                Books.Add(book);
+                if (Books[i].Title == title && Books[i].Author == author && Books[i].PublicationYear == year)
+                {
+                    WriteMessage("The book already exists in the collection.");
+                    exists = true;
+                    return;
+                }
             }
-            else
+
+            if (!exists)
             {
-                Console.WriteLine("The book already exists in the collection.");
+                Books.Add(new Book(title, author, year));
+                WriteMessage("Book added succesfully");
+                return;
             }
         }
 
@@ -45,7 +52,7 @@ namespace Books
         {
             WriteMessage("Here is the list of books:");
 
-            foreach(Book book in Books)
+            foreach (Book book in Books)
             {
                 WriteMessage($"Title: {book.Title}, author: {book.Author}, publication year: {book.PublicationYear}.");
             }
@@ -178,7 +185,7 @@ namespace Books
         {
             string json = JsonConvert.SerializeObject(Books);
             File.WriteAllText("books.json", json);
-            Console.WriteLine("Books saved successfully.");
+            WriteMessage("Books saved successfully.");
         }
 
         private void LoadBooks()
@@ -187,7 +194,6 @@ namespace Books
             {
                 string json = File.ReadAllText("books.json");
                 Books = JsonConvert.DeserializeObject<List<Book>>(json);
-                Console.WriteLine("Books loaded successfully.");
             }
         }
     }
