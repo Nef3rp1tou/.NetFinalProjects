@@ -39,8 +39,17 @@ namespace GuessTheNumber
             int num2 = ReadNumber();
             showMessage("\nYou have 5 guesses. LETS PLAY!!!");
             showMessage("\nWhat is your guess?!");
-            
-            int generatedNum = RandomNumGenerator(num1, num2);
+
+          
+            if (num1 >= num2)
+            {
+
+                int temp = num1;
+                num1 = num2;
+                num2 = temp;
+            }
+            int generatedNum =  RandomNumGenerator(num1, num2);
+       
 
 
             while (true)
