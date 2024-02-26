@@ -97,13 +97,14 @@ namespace GuessTheNumber
             showMessage($"Do you want to play again? (Y/N)");
            
             string answer = Console.ReadLine();
+
             if (answer.ToLower() == "y")
             {
                 tries = 1;
                 guesses = 5;
                 Start();
             }
-            else if (answer.ToLower() == "n")
+            else 
             {
                 showMessage($"Hope you liked the game. Be back soon!!!");
                 return;

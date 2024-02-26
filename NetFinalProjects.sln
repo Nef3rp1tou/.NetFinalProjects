@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Translate", "Translate\Tran
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HangMan", "HangMan\HangMan.csproj", "{1B7C4BF8-A863-4EBB-9AA4-8534B69980D6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP_Part", "OOP_Part\OOP_Part.csproj", "{6E0D3AA7-EED3-4F81-9F44-688EE6181615}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentManagement", "OOP_Part\StudentManagement.csproj", "{6E0D3AA7-EED3-4F81-9F44-688EE6181615}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Books", "Books\Books.csproj", "{3BA09DE5-D805-4499-ABA7-0F7D2A3B4138}"
 EndProject
